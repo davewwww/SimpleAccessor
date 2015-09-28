@@ -40,6 +40,9 @@ class SimpleAccessor
     }
 
     /**
+     * :TODO:
+     * camelizer: 'creation_date' -> getCreationDate()
+     *
      * @param object|array $objectOrArray
      * @param string       $property
      *

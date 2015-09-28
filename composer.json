@@ -2,14 +2,14 @@
     "name": "dwo/simple_accessor",
     "description": "Simple property access to objects and arrays by using simple string notation",
     "keywords": ["property", "access", "objects", "arrays", "property path"],
-    "homepage": "http://www.lovoo.com",
+    "homepage": "https://github.com/davewwww",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "David Wolter",
             "email": "david@lovoo.com",
-            "homepage": "http://www.lovoo.com"
+            "homepage": "https://github.com/davewwww"
         }
     ],
     "require": {
