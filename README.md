@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/davewwww/SimpleAccessor.svg)](https://travis-ci.org/davewwww/SimpleAccessor) [![Coverage Status](https://coveralls.io/repos/davewwww/SimpleAccessor/badge.svg)](https://coveralls.io/r/davewwww/SimpleAccessor)
+[![Build Status](https://travis-ci.org/davewwww/SimpleAccessor.svg)](https://travis-ci.org/davewwww/SimpleAccessor) [![Coverage Status](https://coveralls.io/repos/davewwww/SimpleAccessor/badge.svg)](https://coveralls.io/r/davewwww/SimpleAccessor) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/davewwww/SimpleAccessor/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/davewwww/SimpleAccessor/?branch=master)
 
 SimpleAccessor
 --------------
