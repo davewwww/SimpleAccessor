@@ -10,7 +10,7 @@ namespace Dwo\SimpleAccessor;
 class SimpleAccessor
 {
     /**
-     * @param object $objectOrArray
+     * @param mixed  $objectOrArray
      * @param string $propertyPath
      * @param bool   $throwIfNotFound
      *
@@ -43,8 +43,8 @@ class SimpleAccessor
      * :TODO:
      * camelizer: 'creation_date' -> getCreationDate()
      *
-     * @param object|array $objectOrArray
-     * @param string       $property
+     * @param mixed  $objectOrArray
+     * @param string $property
      *
      * @return mixed
      */
