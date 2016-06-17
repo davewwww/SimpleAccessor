@@ -3,11 +3,12 @@
 namespace Dwo\SimpleAccessor\Tests\Fixtures;
 
 /**
- * @author David Wolter <david@lovoo.com>
+ * @author Dave Www <davewwwo@gmail.com>
  */
 class User
 {
     protected $name;
+    public $age;
 
     public function __construct($name)
     {

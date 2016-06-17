@@ -5,7 +5,7 @@ namespace Dwo\SimpleAccessor;
 /**
  * Class SimpleAccessor
  *
- * @author David Wolter <david@lovoo.com>
+ * @author Dave Www <davewwwo@gmail.com>
  */
 class SimpleAccessor
 {
@@ -40,9 +40,6 @@ class SimpleAccessor
     }
 
     /**
-     * :TODO:
-     * camelizer: 'creation_date' -> getCreationDate()
-     *
      * @param mixed  $objectOrArray
      * @param string $property
      *
@@ -53,11 +50,18 @@ class SimpleAccessor
         $propertyValue = null;
 
         if (is_object($objectOrArray)) {
-            if (method_exists($objectOrArray, $method = 'get'.ucfirst($property))) {
-                $propertyValue = $objectOrArray->$method();
-            } elseif (method_exists($objectOrArray, $method = ucfirst($property))) {
-                $propertyValue = $objectOrArray->$method();
-            } elseif (property_exists($objectOrArray, $property)) {
+
+            $camelProp = str_replace(' ', '', ucwords(str_replace('_', ' ', $property)));
+            $methods = array('get'.$camelProp, lcfirst($camelProp), 'is'.$camelProp, 'has'.$camelProp);
+
+            foreach ($methods as $method) {
+                if (method_exists($objectOrArray, $method)) {
+                    $propertyValue = $objectOrArray->$method();
+                    break;
+                }
+            }
+
+            if (null === $propertyValue && property_exists($objectOrArray, $property)) {
                 $propertyValue = $objectOrArray->$property;
             }
         } elseif (is_array($objectOrArray)) {

@@ -6,7 +6,7 @@ use Dwo\SimpleAccessor\SimpleAccessor;
 use Dwo\SimpleAccessor\Tests\Fixtures\User;
 
 /**
- * @author David Wolter <david@lovoo.com>
+ * @author Dave Www <davewwwo@gmail.com>
  */
 class SimpleAccessorTest extends \PHPUnit_Framework_TestCase
 {
