@@ -18,6 +18,10 @@ class SimpleAccessor
      */
     public static function getValueFromPath($objectOrArray, $propertyPath, $throwIfNotFound = false)
     {
+        if(null !== $value = self::getValue($objectOrArray, $propertyPath)) {
+            return $value;
+        }
+
         $paths = explode('.', $propertyPath);
         $lastPath = array_pop($paths);
 

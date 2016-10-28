@@ -37,6 +37,8 @@ class SimpleAccessorTest extends \PHPUnit_Framework_TestCase
         $obj3->sun = $obj2;
         $obj3->moon = ['obj' => $obj2];
 
+        $arr1 = ['foo' => 1, 'bar' => ['foo'=>2], 'lorem.ipsum' => 3];
+
         return array(
             //obj 1
             array($obj1, 'foo', 'bar'),
@@ -62,6 +64,10 @@ class SimpleAccessorTest extends \PHPUnit_Framework_TestCase
             array($obj3, 'sun.ipsum.1.foobar', 'bar'),
             array($obj3, 'sun', $obj2),
             array($obj3, 'moon.obj.ipsum.1.foobar', 'bar'),
+            //arr 1
+            array($arr1, 'foo', 1),
+            array($arr1, 'bar.foo', 2),
+            array($arr1, 'lorem.ipsum', 3),
         );
     }
 }
